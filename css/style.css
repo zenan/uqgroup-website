@@ -209,7 +209,7 @@ div.archive p .icon-calendar { display: block; float: right; }
 #content .see-all a:hover { color: #666; }
 .article { position: relative; overflow: hidden; min-height: 5.9em; }
 .article .thumbnail img { height: 100%; width: 100%; }
-.article .thumbnail{opacity:1.0;float:left;height:5.9em;width:4.5em;margin-right:0.75em ;overflow:hidden;filter:grayscale(75%);-webkit-filter:grayscale(75%);-moz-filter:grayscale(75%);}
+.article .thumbnail{opacity:1.0;float:left;height:5.9em;width:4.5em;margin-right:0.75em ;overflow:hidden;filter:grayscale(50%);-webkit-filter:grayscale(50%);-moz-filter:grayscale(50%);}
 .article .thumbnail-active{opacity:1.0;filter:grayscale(0%);-webkit-filter:grayscale(0%);-moz-filter:grayscale(0%);}
 .article .authors { margin: 0.75em 0 0.3em 0; font-size: 87.5%; }
 .article .author { }

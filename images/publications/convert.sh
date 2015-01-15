@@ -1,7 +1,12 @@
 #!/bin/sh
 
-for i in *.jpg; do
+for i in *.gif; do
     convert $i ${i%%.*}.png
+    rm -vf $i
 done
 
-rm -vf *.jpg
+for i in *.jpg; do
+    convert $i ${i%%.*}.png
+    rm -vf $i
+done
+
