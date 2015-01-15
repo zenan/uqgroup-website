@@ -3,4 +3,5 @@ $template = Template::getInstance();
 $template->title = 'Page Not Found';
 ?>
 
-<h2>Error 404: Page Not Found</h2>
+<h3>Sorry, the page you requested was not found</h3>
+<p>Please check the URL for proper spelling and capitalization.</p>
