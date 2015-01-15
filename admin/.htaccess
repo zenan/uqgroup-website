@@ -1,5 +1,5 @@
-<Files index.php>
-  AuthType SSLCert
-  Require user zenan yc_lab
-  ErrorDocument 401 /__scripts/needcerts
-</Files>
+#<Files index.php>
+#  AuthType SSLCert
+#  Require user zenan yc_lab
+#  ErrorDocument 401 /__scripts/needcerts
+#</Files>

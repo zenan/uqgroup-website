@@ -1,7 +1,7 @@
 <?php
 $template = Template::getInstance();
-$template->title = 'People';
-$template->tab = 'People';
+$template->title = 'Team';
+$template->tab = 'Team';
 $template->sidebar = false;
 
 $people = json_decode(file_get_contents('json/people.json'), true);

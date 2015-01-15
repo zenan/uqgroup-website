@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>UQGroup - <?=$this->title;?></title> 
+  <title>Chen Lab - <?=$this->title;?></title> 
   <link href="/css/style.css?20150115" rel="stylesheet" type="text/css" media="screen" />
   <link href="/css/font-awesome.css"  rel="stylesheet" type="text/css" />
   <link href='//fonts.googleapis.com/css?family=Titillium+Web:300' rel='stylesheet' type='text/css'>
@@ -35,7 +35,7 @@
       $tabs = array(
         array('Home', '/home'),
         array('Research', '/research'),
-        array('Publications', '/publications'),
+        array('Publications', '/publications/articles'),
         array('Team', '/team'),
         array('Join Us', '/join-us')
       );
