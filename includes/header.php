@@ -21,8 +21,8 @@
   <div id="header" class="clearfix">
     <div id="title">
       <div id="title-wrap">
-      <h1><a href="/home">Uncertainty Quantification Group</a></h1>
-      <h2><a href="http://mit.edu">Massachusetts Institute of Technology</a></h2>
+      <h1><a href="/home">Chen Lab</a></h1>
+      <h2><a href="http://www.chemeng.ucla.edu/">UCLA Chemical &amp; Biomolecular Engineering</a></h2>
       </div>
     </div>
   </div>
@@ -34,12 +34,10 @@
 
       $tabs = array(
         array('Home', '/home'),
-        array('People', '/people'),
-        array('Publications', '/publications/articles'),
         array('Research', '/research'),
-        array('Software', '/software'),
-        array('Teaching', '/teaching'),
-        array('Outings', '/outings')
+        array('Publications', '/publications'),
+        array('Team', '/team'),
+        array('Join Us', '/join-us')
       );
       
       foreach ($tabs as $tab) {
