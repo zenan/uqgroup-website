@@ -51,7 +51,7 @@ body { }
  
 /* fonts */
 #content h2, #content h4, #nav ul li a { font-weight: bold; }
-#title h1 {font-family: 'Titillium Web', sans-serif; }
+#title h1 {font-family: 'Raleway', sans-serif; }
 textarea.bibtex { font-family: "Inconsolata", "Consolas", monospace; }
 code.block { display: block; font-family: "Inconsolata", "Consolas", monospace; }
 code.block, pre.code, .article textarea.bibtex  { font-size: 85%; background: #fafafa; padding: 0.5em; margin: 0.5em 0; border: 1px solid #ddd; overflow: auto; }
@@ -86,7 +86,6 @@ body { background: #fff;; }
 #title h2{font-size:120%;}
 #title h1 a{color:#fff;}
 #title h2 a{color:rgba(255,255,255,0.5);}
-
 
 #nav-wrap { }
 #nav ul { }
@@ -130,9 +129,7 @@ a.btn:hover{background:#369;color:#eafaff;box-shadow:0 1px 0 rgba(255,255,255,0.
 #content #breadcrumbs { margin-bottom: 0.75em; font-size: 85%; }
 #content #breadcrumbs:hover { opacity: 1.0; }
 #content #breadcrumbs i { margin: 0px 5px; }
-
 #content h3.topic { clear: both; }
-
 #content .figure { width: 40%; }
 #content .figure img { width:100%; border-radius: 3px; }
 #content .figure img.shadow { box-shadow: 0 0.2em 0.8em -0.1em rgba(0,0,0,0.2); }
@@ -149,7 +146,7 @@ a.btn:hover{background:#369;color:#eafaff;box-shadow:0 1px 0 rgba(255,255,255,0.
 #footer p a:hover { color: #aaa; border-bottom: 1px dotted #999; }
 #footer h4 { color: #aaa; font-size: 125%; font-weight: bold; margin-bottom: 0.5em;}
 #footer .contact { font-size: 85%; float: right; width: 34em; margin: 1.5em 1em 0 0; }
-#footer .youssef { float:left; width: 22em; }
+#footer .pi { float:left; width: 30em; }
 #footer .admin { float: left; width: 12em; }
 #footer .contact i { display:inline-block; width: 1.25em; text-align: center; margin-right: 0.2em; }
 #footer p strong { color: #ccc; font-weight: bold;  }
@@ -165,7 +162,6 @@ a.btn:hover{background:#369;color:#eafaff;box-shadow:0 1px 0 rgba(255,255,255,0.
 .people-browser h3 { clear: both; margin-bottom: 0.8em; }
 .people-browser ul {padding: 0; margin: 0; }
 .people-browser li { display: block; margin-bottom: 0.5em; }
-
 li.person { display:block; clear: both; }
 li.person img { display: block; float:left; width: 12em; height: 17.5em; margin: 0.3em 1em 0.5em 0em; padding:2px; box-shadow: 0 0.2em 0.6em -0.1em rgba(0,0,0,0.4);}
 li.person { color :#222; font-size: 95%; }
@@ -176,32 +172,17 @@ li.person-pi .name { clear: both; font-size: 115%;}
 li.person .info { display: block; font-size: 85%;}
 li.person .info.small { font-size: 75%;}
 li.person .bio p { font-size:90%;  margin: 0.5em; padding-left: 0.5em; }
-
 .alumni li { font-size: 90%; }
-
 #content div.alumni { margin-top: 1em; }
 #content div.alumni li { color: #666; }
 #content div.alumni li strong { font-weight: normal; color: #000; }
-.group-photo { margin: -1em; margin-bottom: 1em; }
-.group-photo img { }
+li.person .contact { font-size: 90%; color: #999; }
 
-/* archive.php */
+/* announcements.php */
 div.archive p { font-size: 95%; }
 div.archive p .icon-external-link { display: block; float: right; }
 div.archive p .icon-calendar { display: block; float: right; }
 
-#publication-switcher{margin-bottom:0.6em;}
-#publication-switcher h3 { font-family: "Arimo", sans-serif; }
-#publication-switcher h3{background:#bbb;box-shadow:inset 0px 1.2em 3em -1.2em rgba(255,255,255,1);border:1px solid #999;width:33.3333%;height:2.5em;padding:0.7em;font-size:90%;border-right:1px solid #ccc;border-left:1px solid #999;text-shadow:0 1px 1px #fff;margin:0;text-align:center;display:inline-block;float:left;}
-#publication-switcher h3 a { color:#333;font-weight:bold; }
-#publication-switcher h3:first-child{border-top-left-radius:0.2em;border-bottom-left-radius:0.2em;}
-#publication-switcher h3:last-child{border-top-right-radius:0.2em;border-bottom-right-radius:0.2em;border-right:1px solid #999;}
-#publication-switcher h3:hover{background:#ccc;}
-#publication-switcher h3.active{background:#369;box-shadow:inset 0px 1.2em 60px -1.2em rgba(0,0,0,1.0);border:1px solid #334;text-shadow:0px 1px 1px #000;}
-#publication-switcher h3.active a {color:#fff;}
-#publication-switcher h3.active:hover { background: #47a; }
-
-#publication-switcher-wrapper{width:47em;position:relative;}
 #articles-wrapper, #conferences-wrapper, #books-wrapper { width: 46.9em;  }
 #articles-wrapper { left:0; }
 #conferences-wrapper { left: 50em;}
@@ -219,15 +200,8 @@ div.archive p .icon-calendar { display: block; float: right; }
 #publications-form #select-author { min-width: 11em; }
 #publications-form #select-journal { min-width: 16em; max-width: 20em;}
 
-.course { font-size: 95%; clear:both; margin-bottom: 1em; position:relative;}
-.course p { display: block; float: left; width: 35em; margin-right: -2em;}
-.course .title { font-size: 110%; width: 70%; padding-bottom: 0.5em; border-bottom: 1px solid #ccc; margin-bottom: 0.5em !important; }
-.course img { float:right; margin-top: 0.5em; width: 13em; height: 15em; margin-left: 0em; border-left: 1em solid #fff;}
-
-
 .articles .even { background: #f5f5f5; }
 .articles .odd { background: #fff; }
-
 .articles { margin-bottom: 0; border-bottom: 1px solid transparent}
 .article {  border: 1px solid transparent; border-bottom: 1px solid transparent; }
 #content .see-all { }
@@ -258,36 +232,14 @@ textarea.bibtex{width:100%;height:15em;line-height:1.2em;font-size:80%;padding:0
 .article a.button-bibtex { top: 4.5em; }
 .article a.button i { float: right; }
 .article a.button span { opacity: 0.0; }
-
 #content .article a.button:hover, #content .article a.button:hover span { color: #262; }
 #content .article a.active {color: #999; }
 #content .article a.active span { color: #999;}
-/*#content .article a.selected { background: #b77; color: #fff; }
-#content .article a.selected:hover { background: #262; color: #fff; }*/
-
 #content .article-buttons { position: absolute; height: 5.9em; top: 0; right: 0; width: 6em;  }
 #content .article-buttons.active span { opacity: 0.4;}
 #content .article-buttons:hover span { opacity: 1.0; }
 #content .even .article-buttons.active { background:inherit; }
 #content .odd .article-buttons.active { background:inherit; }
-
-/*
-#content .article:hover {
--webkit-transform:scale(1.03);
-transform:scale(1.03);
-  box-shadow: 0 0.2em 2em -0.1em rgba(0,0,0,0.2);
-  z-index: 15;
-}
-#content .article {
--webkit-transition: all 0.13s ease;
-transition: all 0.13s ease;
-}
-*/
-
-/*
-#content .even:hover { border: 1px solid #ddd; }
-#content .odd:hover { border: 1px solid #ddd; }
-*/
 
 #simplemodal-overlay {background-color:#000;}
 #simplemodal-container {height:20em; width:30em; color:#333; background-color:#fff; border:1px solid #ccc; padding:1em;}
@@ -296,68 +248,16 @@ transition: all 0.13s ease;
 #simplemodal-container a.btn i {float: right; padding:0.25em 0; }
 #simplemodal-container h4 {font-weight: bold; margin-bottom: 0.5em;}
 #simplemodal-container p {font-size: 90%; margin-bottom: 0.6em;}
-
 #simplemodal-container a.modalCloseImg {background:url(x.png) no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;}
 
-
-.conference { padding-left: 2em; margin-bottom: 0.4em; }
-.conference-order {  display: inline-block; width: 1.7em; margin-left: -2em; }
-.conference-authors { margin-bottom: 0.3em;}
-.conference-title { font-style: italic; }
-.conference-conference {  }
-.conference-publication {  }
-.conference-year { }
-.conference-url {  }
 
 /* hanging indents */
 #content .article .abstract p { margin-bottom: 0; }
 #content .article .abstract p + p { text-indent: 1.5em; margin-top: 0; }
 
-/* research.php */
-.blurb { margin-bottom: 2em; }
-.blurb .caption { font-size: 85%; text-align: center; }
-.blurb .col-1-2, .blurb .col-2-2 { text-align: center; }
-
 #content hr {
   border-bottom: 1px solid #ccc;
   margin-bottom: 2em;
-}
-
-#content .outing {
-
-}
-
-#content .outing h3 {
-  border-bottom: 0;
-  margin-bottom: 0;
-  font-size: 100%;
-  font-weight: bold;
-}
-
-#content .gallery {
-  width: 760px;
-}
-
-#content .gallery img {
-  width: 240px;
-  height: 160px;
-  margin: 4px;
-  margin-left: 0;
-  margin-right: 10px;
-  border-radius: 3px;
-  box-shadow: 0 0.2em 0.6em -0.1em rgba(0,0,0,0.4); 
-}
-
-
-#content .gallery img:hover {
--webkit-transform:scale(1.05);
-transform:scale(1.05);
-  box-shadow: 0 0.2em 2em -0.1em rgba(0,0,0,0.8); 
-  z-index: 15;
-}
-#content .gallery img {
--webkit-transition: all 0.2s ease;
-transition: all 0.2s ease;
 }
 
 /* home page */

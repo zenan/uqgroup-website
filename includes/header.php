@@ -5,7 +5,7 @@
   <title>Chen Lab - <?=$this->title;?></title> 
   <link href="/css/style.css?20150116" rel="stylesheet" type="text/css" media="screen" />
   <link href="/css/font-awesome.css"  rel="stylesheet" type="text/css" />
-  <link href='//fonts.googleapis.com/css?family=Titillium+Web:300' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link href='//fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="/js/main.js"></script>

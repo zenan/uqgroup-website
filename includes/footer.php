@@ -34,21 +34,23 @@
   <div class="contact">
     <div class="youssef">
       <h4>Contact Information</h4>
-      <p><a href="http://aeroastro.mit.edu/faculty-research/faculty-list/youssef-m-marzouk" target="_blank"><strong>Youssef Marzouk</strong></a></p>
-      <p>Class of 1942 Associate Professor <br /> of Aeronautics and Astronautics</p>
-      <p><i class="icon-envelope"></i> ymarz (at) mit.edu</p>
-      <p><i class="icon-phone"></i> (617) 253-1337</p>
-      <p><i class="icon-map-marker"></i> <a href="http://whereis.mit.edu/?go=37" target="_blank">77 Massachusetts Ave, Room 37-451</a><br />
-       <i>&nbsp;</i> Cambridge, MA 02139
+      <p><a href="http://www.chemeng.ucla.edu/people/faculty/yvonne-chen" target="_blank"><strong>Yvonne Chen</strong></a></p>
+      <p>Assistant Professor of Chemical and Biomolecular Engineering</p>
+      <p><i class="icon-envelope"></i> yvchen at ucla dot edu</p>
+      <p><i class="icon-phone"></i> (310) 825-2816</p>
+      <p><i class="icon-map-marker"></i>5532-H Boelter Hall<br />
+       <i>&nbsp;</i>Los Angeles, CA 90095
       </p>
     </div>
+    <!--
     <div class="admin">
       <h4>&nbsp;</h4>
-      <p><strong>Sophia Hasenfus</strong></p>      
+      <p><strong>Name</strong></p>      
       <p>Administrative Assistant<br />&nbsp;</p>
-      <p><i class="icon-envelope"></i> shasen (at) mit.edu</p>
-      <p><i class="icon-phone"></i> (617) 252-1536</p>
+      <p><i class="icon-envelope"></i> email</p>
+      <p><i class="icon-phone"></i> phone</p>
     </div>
+    -->
   </div>
   <div class="logos-wrapper">
   <ul class="logos">
@@ -69,6 +71,7 @@
   </div>
 </div>
 </div>
+
 <script type="text/javascript">
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-38300402-1']);
@@ -79,5 +82,6 @@ _gaq.push(['_trackPageview']);
   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 </script>
+
 </body>
 </html>
