@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Chen Lab - <?=$this->title;?></title> 
-  <link href="/css/style.css?20150115" rel="stylesheet" type="text/css" media="screen" />
+  <link href="/css/style.css?20150116" rel="stylesheet" type="text/css" media="screen" />
   <link href="/css/font-awesome.css"  rel="stylesheet" type="text/css" />
   <link href='//fonts.googleapis.com/css?family=Titillium+Web:300' rel='stylesheet' type='text/css'>
   <link href='//fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
@@ -35,7 +35,7 @@
       $tabs = array(
         array('Home', '/home'),
         array('Research', '/research'),
-        array('Publications', '/publications/articles'),
+        array('Publications', '/publications'),
         array('Team', '/team'),
         array('Join Us', '/join-us')
       );

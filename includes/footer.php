@@ -62,11 +62,8 @@
 </div>
   <div id="footer-bottom" class="clearfix">
     <div class="center-width">
-    <div class="designed-by">
-      Designed by <a href="http://chifeng.scripts.mit.edu/">Chi Feng</a>
-    </div>
     <div class="copyright">
-      Copyright &copy;<?php echo date('Y'); ?>, MIT Uncertainty Quantification Group.  
+      Yvonne Chen Lab. Copyright &copy;<?php echo date('Y'); ?> All Rights Reserved.
     </div>
     </div>
   </div>

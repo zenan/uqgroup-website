@@ -389,6 +389,7 @@ class Person extends Object {
       'id' => array('label' => 'ID', 'type' => 'hidden'), 
       'name' => array('label' => 'Name', 'type' => 'text'), 
       'type' => array('label' => 'Type', 'type' => 'person_type'),
+      'affiliation' => array('label' => 'Affiliation(s)', 'type' => 'textarea'), 
       'email' => array('label' => 'Email', 'type' => 'text'), 
       'url' => array('label' => 'Photo URL', 'type' => 'text'), 
       'bio' => array('label' => 'Bio', 'type' => 'textarea')

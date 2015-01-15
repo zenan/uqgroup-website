@@ -2,7 +2,7 @@
 $template = Template::getInstance();
 $template->title = 'Team';
 $template->tab = 'Team';
-$template->sidebar = false;
+// $template->sidebar = false;
 
 $people = json_decode(file_get_contents('json/people.json'), true);
 
@@ -50,11 +50,26 @@ function people_filter($type) {
     foreach($people as $person) {
       if ($person['type'] == $type) {
         echo '<li class="person person-'.$type.'"><img src="/images/people/'.$person['url'].'.png" alt="'.$person['name'].'" title="'.$person['name'].'" />
-          <span class="name">'.$person['name'].'</span>
-          <div class="bio" id="'.$person['url'].'"><p>'.$person['bio'].'</p></div>
-          </li>';
-        if (++$count % 2 == 0)
-          echo '<br style="clear:both;" />';
+          <span class="name">'.$person['name'].'</span>';
+
+        if (isset($person['affiliation']) && !empty($person['affiliation'])) {
+          echo '<div class="affiliations">';
+          $affiliations = explode("\n", $person['affiliation']);
+          echo '<ul>';
+          foreach ($affiliations as $affiliation) {
+            echo '<li>'.$affiliation.'</li>';
+          }
+          echo '</ul>';
+          echo '</div>';
+        }
+
+        echo '<div class="bio" id="'.$person['url'].'">';
+        echo '<p>'.$person['bio'].'</p>';
+        echo '</div>';
+        if (!empty($person['email'])) {
+          echo '<div class="contact">'.$person['email'].' at ucla dot edu</div>';
+        }
+        echo '</li>';
       }
     }
   }
@@ -83,41 +98,62 @@ function list_alumni($type) {
   <h3>Principal Investigator</h3>
   <?php people_filter('pi'); ?>
 
+  <?php if (count_people('postdoc') > 0) { ?>
   <h3>Postdoctoral Associates</h3>
   <?php people_filter('postdoc'); ?>
+  <?php } ?>
   
   <?php if (count_people('visitor') > 0) { ?>
   <h3>Current Visitors</h3>
   <?php people_filter('visitor'); ?>
   <?php } ?>
 
-  <h3>Graduate Students, PhD</h3>
+  <h3>Graduate Students, Ph.D.</h3>
   <?php people_filter('phd'); ?>
   
-  <h3>Graduate Students, SM</h3>
+  <h3>Graduate Students, M.S.</h3>
   <?php people_filter('sm'); ?>
 
-  <?php if (count_people('urop') > 0) { ?>
-  <h3>Undergraduate Students (UROP)</h3>
-  <?php people_filter('urop'); ?>
+  <?php if (count_people('undergrad') > 0) { ?>
+  <h3>Undergraduate Students</h3>
+  <?php people_filter('undergrad'); ?>
   <?php } ?>
 
 </div>
 
 <br style="clear:both" />
 
+<?php 
+$alumn_count = count_people('postdoc-alumn')
+             + count_people('visitor-alumn')
+             + count_people('grad-alumn')
+             + count_people('undergrad-alumn');
+if ($alumn_count > 0) {
+?>
 <h2>Alumni</h2>
 <div class="alumni">
   <div class="col-1-2">
+  <?php if (count_people('postdoc-alumn') > 0) { ?>
   <h3>Postdoctoral Alumni</h3>
     <?php list_alumni('postdoc-alumn'); ?>
+  <?php } ?>
+
+  <?php if (count_people('visitor-alumn') > 0) { ?>
   <h3>Long Term Visitors</h3>
     <?php list_alumni('visitor-alumn'); ?>
+  <?php } ?>
   </div>
   <div class="col-2-2">
+
+  <?php if (count_people('grad-alumn') > 0) { ?>
   <h3>Graduate Alumni</h3>
     <?php list_alumni('grad-alumn'); ?>
+  <?php } ?>
+
+  <?php if (count_people('undergrad-alumn') > 0) { ?>
   <h3>Undergraduate Alumni</h3>
     <?php list_alumni('undergrad-alumn'); ?>
+  <?php } ?>
   </div>
 </div>
+<?php } ?>

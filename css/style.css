@@ -131,6 +131,15 @@ a.btn:hover{background:#369;color:#eafaff;box-shadow:0 1px 0 rgba(255,255,255,0.
 #content #breadcrumbs:hover { opacity: 1.0; }
 #content #breadcrumbs i { margin: 0px 5px; }
 
+#content h3.topic { clear: both; }
+
+#content .figure { width: 40%; }
+#content .figure img { width:100%; border-radius: 3px; }
+#content .figure img.shadow { box-shadow: 0 0.2em 0.8em -0.1em rgba(0,0,0,0.2); }
+#content .figure .caption { font-size: 85%; font-weight: bold; margin-bottom: 0.5em; }
+#content .figure-right { float: right; padding-right: 0; padding-left: 0.5em;}
+#content .figure-left { float: left; padding-left: 0; padding-right:0.75em;}
+
 #footer { }
 #footer-bottom .copyright { display:block; font-size: 85%; color: #666; width: 34em; float:right; text-align: right; }
 #footer-bottom .designed-by { font-size: 85%; color: #666; float:left; padding: 0px 1.5em; }
@@ -157,16 +166,16 @@ a.btn:hover{background:#369;color:#eafaff;box-shadow:0 1px 0 rgba(255,255,255,0.
 .people-browser ul {padding: 0; margin: 0; }
 .people-browser li { display: block; margin-bottom: 0.5em; }
 
-li.person { display: inline-block; float: left; width: 34em; }
-li.person-pi { width: auto; }
-li.person img { display: block; float:left; width: 7.4em; height: 10em; margin: 0.3em 0.5em 0.5em 0em; }
+li.person { display:block; clear: both; }
+li.person img { display: block; float:left; width: 12em; height: 17.5em; margin: 0.3em 1em 0.5em 0em; padding:2px; box-shadow: 0 0.2em 0.6em -0.1em rgba(0,0,0,0.4);}
 li.person { color :#222; font-size: 95%; }
-li.person .name { display:inline-block; margin-top: 0.0em; font-weight: bold;}
+li.person .name { display:inline-block; margin-top: 0.5em; margin-bottom: 0.3em; font-size:115%; font-weight: bold;}
 li.person-pi .name { clear: both; font-size: 115%;}
+#content li.person .affiliations ul li { margin: 0; font-size: 85%;}
+#content li.person .affiliations ul {margin-bottom: 0.1em; }
 li.person .info { display: block; font-size: 85%;}
 li.person .info.small { font-size: 75%;}
-li.person .bio p { line-height: 15px; font-size: 13px; margin: 0.5em; padding-left: 0.5em;}
-li.person-pi .bio p { line-height: 19px; font-size: 15px; }
+li.person .bio p { font-size:90%;  margin: 0.5em; padding-left: 0.5em; }
 
 .alumni li { font-size: 90%; }
 
