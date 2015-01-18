@@ -3,9 +3,8 @@ $template = Template::getInstance();
 $template->title = 'Home';
 $template->tab = 'Home';
 ?>
-/* <h2>Introduction</h2> 
-*/
-    
+<h2>Introduction</h2> 
+
 <p>Welcome to the Chen Lab website!</p>
 <div class="figure figure-left" style="width:29%">
 	<img src="/images/home/home1.jpg" />
