@@ -32,7 +32,7 @@ a:hover { color: #393; }
 .logos-wrapper { width: 41em; }
 #content      { width:  49em; }
 #content-wrap.nosidebar #content {width: 67em; }
-#footer-wrap { position: absolute; 0;}
+#footer-wrap { position: absolute; }
 
 html, body { height: 100%; width: 100%;}
 body { }
@@ -51,7 +51,8 @@ body { }
 #header       { height: 10em; }
 #footer-wrap  { overflow: hidden; }
 #vertical-container         { padding-bottom: 16.5em; }
-#footer-wrap  { height: 16.5em; position: absolute; bottom: 0; width: 100%;}
+#footer-wrap  { height: 2.5em; position: absolute; bottom: 0; width: 100%;}
+#footer-bottom {height: 2.5em; line-height: 2.5em; }
 
 /* columns */
 .col-1-2, .col-2-2 { }
@@ -149,7 +150,7 @@ a.btn:hover{background:#369;color:#eafaff;box-shadow:0 1px 0 rgba(255,255,255,0.
 #footer-bottom .copyright { display:block; font-size: 85%; color: #666; width: 34em; float:right; text-align: right; }
 #footer-bottom .designed-by { font-size: 85%; color: #666; float:left; padding: 0px 1.5em; }
 #footer-bottom .designed-by a { color: #888; }
-#footer-bottom { border-top: 1px solid #333; padding: 0.6em 2em 1.1em 2em; margin-top: 1em; }
+#footer-bottom { border-top: 1px solid #333; padding: 0 2em; }
 #footer p a { color: #888; border-bottom: 1px dotted #666; }
 #footer p a:hover { color: #aaa; border-bottom: 1px dotted #999; }
 #footer h4 { color: #aaa; font-size: 125%; font-weight: bold; margin-bottom: 0.5em;}
