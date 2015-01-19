@@ -33,15 +33,15 @@
       <?php 
 
       $tabs = array(
-        array('Home', '?p=home'),
-        array('Research', '?p=research'),
-        array('Team', '?p=team'),
-        array('Publications', '?p=publications'),
-        array('Join Us', '?p=join-us')
+        array('Home', 'home'),
+        array('Research', 'research'),
+        array('Team', 'team'),
+        array('Publications', 'publications'),
+        array('Join Us', 'join-us')
       );
       
       foreach ($tabs as $tab) {
-        $url = $tab[1];
+        $url = (USE_REWRITE) ? '/' . $tab[1] : '?p=' . $tab[1];
         $name = $tab[0];
         $active = $this->tab == $name ? ' class="active"' : '';
         if ($name == 'Home') $name = '<i class="icon-home"></i>';
