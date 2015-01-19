@@ -35,8 +35,8 @@
       $tabs = array(
         array('Home', '/home'),
         array('Research', '/research'),
-        array('Publications', '/publications'),
         array('Team', '/team'),
+        array('Publications', '/publications'),
         array('Join Us', '/join-us')
       );
       
