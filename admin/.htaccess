@@ -1,9 +1,4 @@
-#<Files index.php>
-#  AuthType SSLCert
-#  Require user zenan yc_lab
-#  ErrorDocument 401 /__scripts/needcerts
-#</Files>
-#AuthType Basic
-#AuthName "Password Protected Area"
-#AuthUserFile /home/chifeng/yvchen/.htpasswd
-#Require valid-user
+AuthType Basic
+AuthName "Password Protected Area"
+AuthUserFile /home/.htpasswd
+Require valid-user

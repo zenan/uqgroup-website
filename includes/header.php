@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Chen Lab - <?=$this->title;?></title> 
+  <title>Chen Lab - <?php echo $this->title; ?></title> 
   <link href="/css/style.css?20150116" rel="stylesheet" type="text/css" media="screen" />
   <link href="/css/font-awesome.css"  rel="stylesheet" type="text/css" />
   <link href='//fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
