@@ -33,11 +33,11 @@
       <?php 
 
       $tabs = array(
-        array('Home', '/home'),
-        array('Research', '/research'),
-        array('Team', '/team'),
-        array('Publications', '/publications'),
-        array('Join Us', '/join-us')
+        array('Home', '?p=home'),
+        array('Research', '?p=research'),
+        array('Team', '?p=team'),
+        array('Publications', '?p=publications'),
+        array('Join Us', '?p=join-us')
       );
       
       foreach ($tabs as $tab) {
