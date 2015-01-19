@@ -20,8 +20,10 @@
       <h2>Links</h2>
       <div class="sidebar-content">
         <ul class="links">
+        <!--
         <li><a href="https://wikis.mit.edu/confluence/display/uqlab/Home"><i class="icon-lock"></i> Lab Wiki </a></li>
         <li><a href="https://wikis.mit.edu/confluence/display/uqgroup/Home"><i class="icon-lock"></i> Reading Group Wiki</a></li>
+        -->
         <li><a href="/admin/index.php"><i class="icon-lock"></i> Website Administration</a></li>
         </ul>
       </div>
@@ -32,7 +34,7 @@
 <div id="footer-wrap">
 <div id="footer" class="clearfix">
   <div class="contact">
-    <div class="youssef">
+    <div class="pi">
       <h4>Contact Information</h4>
       <p><a href="http://www.chemeng.ucla.edu/people/faculty/yvonne-chen" target="_blank"><strong>Yvonne Chen</strong></a></p>
       <p>Assistant Professor of Chemical and Biomolecular Engineering</p>
@@ -53,12 +55,14 @@
     -->
   </div>
   <div class="logos-wrapper">
+  <!--
   <ul class="logos">
     <li><a href="http://mit.edu" target="_blank"><img src="/images/mitlogo.png" alt="cce" width="200" /></a></li>
     <li><a href="http://aeroastro.mit.edu" target="_blank"><img src="/images/aeroastro.png" alt="aeroastro" width="180" /></a></li>
     <li><a href="http://acdl.mit.edu" target="_blank"><img src="/images/acdl.png" alt="acdl" width="100" /></a></li>
     <li><a href="http://computationalengineering.mit.edu" target="_blank"><img src="/images/cce.png" alt="cce" width="200" /></a></li>
   </ul>
+  -->
   </div>
   <br style="clear: both" />
 </div>

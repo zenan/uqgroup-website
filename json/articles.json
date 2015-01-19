@@ -10,16 +10,15 @@
 		"order": "8",
 		"fulltext": "",
 		"journal": "",
-		"doi": "",
 		"year": "2015",
-		"arxiv": "",
 		"volume": "",
 		"thumbnail": "",
-		"number": "",
+		"issue": "",
 		"month": "0",
-		"pages": "Submitted",
-		"comments": "",
-		"featured": ""
+		"pages": "",
+		"category": "Cell-Based Immunotherapy Engineering",
+		"featured": "",
+		"status": "Submitted"
 	},
 	{
 		"id": "7",
@@ -32,16 +31,15 @@
 		"order": "7",
 		"fulltext": "",
 		"journal": "Wiley Biotechnology Series. (Invited Book Chapter).",
-		"doi": "",
 		"year": "2015",
-		"arxiv": "",
 		"volume": "",
 		"thumbnail": "",
-		"number": "",
+		"issue": "",
 		"month": "0",
-		"pages": "In review",
-		"comments": "",
-		"featured": ""
+		"pages": "",
+		"category": "Cell-Based Immunotherapy Engineering",
+		"featured": "",
+		"status": "In review"
 	},
 	{
 		"id": "6",
@@ -169,7 +167,7 @@
 		"issue": "",
 		"month": "2",
 		"pages": "1083-91",
-		"category": "Cell-Based Immunotherapy Engineering",
+		"category": "Synthetic Biology and Biological Systems Engineering",
 		"featured": "",
 		"status": ""
 	}

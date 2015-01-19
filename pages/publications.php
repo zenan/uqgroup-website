@@ -4,6 +4,8 @@ $template->title = 'Journal Publications';
 $template->tab = 'Publications';
 ?>
 
+<h2>Publications</h2>
+
 <!--
 <form id="publications-form">
   <table>
@@ -25,10 +27,17 @@ $categories = array(
   'Cell-Based Immunotherapy Engineering'
 );
 
+echo '<ul class="bullets">';
+for ($i = 0; $i < count($categories); $i++) {
+  echo '<li><a href="#cat-' . $i .'">' . $categories[$i] .'</a></li>';
+}
+echo '</ul>';
+
 $articles = json_decode(file_get_contents('json/articles.json'), true);
 
-foreach ($categories as $category) {
-  echo '<h3>' . $category .'</h3>';
+for ($i = 0; $i < count($categories); $i++) {
+  $category = $categories[$i];
+  echo '<h3 id="cat-'.$i.'">' . $category .'</h3>';
   echo '<div id="articles-wrapper" class="clearfix">';
   echo '<div id="articles" class="articles">';
   foreach ($articles as $index => $article) {
@@ -38,6 +47,9 @@ foreach ($categories as $category) {
   }
   echo '</div>';
   echo '</div>';
+}
+foreach ($categories as $category) {
+  
 }
 
 ?>

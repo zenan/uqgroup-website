@@ -88,16 +88,28 @@ function render_article($index, $article) {
   $title = '<div class="title"><a href="' . $article['fulltext'] . '">' . $article['title'] . '</a></div>'."\n";
   
   $journal_pages = (isset($article['pages']) && !empty($article['pages'])) ? $article['pages'] : '';
-  $journal_name = $article['journal'];
-  $journal_year = $article['year'];
+  $journal_name = (isset($article['journal']) && !empty($article['journal'])) ? $article['journal'] : '';
+  $journal_year = (isset($article['year']) && !empty($article['year'])) ? $article['year'] : '';
   $journal_volume = $article['volume'] + (!empty($article['issue'])) ? '(' . $article['issue'] . ')' : '';
 
+  if (empty($article['volume'])) {
+    $journal_volume = '';
+  }
   $journal_comment = '';
   if (!empty($article['status'])) {
     $journal_comment = '<span class="status">' . $article['status'] . '</span>';
   }
-
-  $journal = '<div class="journal">' . $journal_name . ' ' . $journal_year .';' . $journal_volume . ':' . $journal_pages . '. ' . $journal_comment .'</div>'. "\n";
+  
+  $journal_entry = $journal_name; 
+  if (!empty($journal_year)) 
+    $journal_entry .= ' ' . $journal_year;
+  if (!empty($journal_volume)) 
+    $journal_entry .= ';' . $journal_volume;
+  if (!empty($journal_pages)) 
+    $journal_entry .= ':' . $journal_pages . '.';
+  $journal_entry .= ' ' . $journal_comment;
+  
+  $journal = '<div class="journal">' . $journal_entry .'</div>'. "\n";
   
   $bibtex_raw = array(
     '@article {', 

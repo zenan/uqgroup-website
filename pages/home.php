@@ -21,6 +21,7 @@ $template->tab = 'Home';
 
 <br style="clear: both;" />
 
+<!--
 <h3 class="noline">Featured Publications</h3>
 <div class="articles">
 <?php 
@@ -30,6 +31,7 @@ show_featured_articles(); ?>
 <div class="see-all">
   <a href="/publications">See all publications</a>
 </div>
+-->
 
 <script type="text/javascript" src="js/jquery.simplemodal.js"></script>
 <script type="text/javascript">
