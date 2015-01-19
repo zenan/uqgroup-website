@@ -453,16 +453,15 @@ class Article extends Object {
       'order' => array('label' => 'Ordering ID', 'type' => 'text'),   
       'fulltext' => array('label' => 'Fulltext URL', 'type' => 'text'),  
       'journal' => array('label' => 'Journal', 'type' => 'text'),  
-      'doi' => array('label' => 'DOI', 'type' => 'text'),  
-      'year' => array('label' => 'Year', 'type' => 'text'),  
-      'arxiv' => array('label' => 'arXiv', 'type' => 'text'),  
+      'year' => array('label' => 'Year', 'type' => 'text'),
       'volume' => array('label' => 'Volume', 'type' => 'text'),  
       'thumbnail' => array('label' => 'Thumbnail', 'type' => 'text'),
-      'number' => array('label' => 'Number', 'type' => 'text'),  
+      'issue' => array('label' => 'Issue', 'type' => 'text'),  
       'month' => array('label' => 'Month', 'type' => 'month'),  
       'pages' => array('label' => 'Pages', 'type' => 'text'),  
-      'comments' => array('label' => 'Comments', 'type' => 'text'),
-      'featured' => array('label' => 'Featured', 'type' => 'text')
+      'category' => array('label' => 'Category', 'type' => 'text'),
+      'featured' => array('label' => 'Featured', 'type' => 'text'),
+      'status' => array('label' => 'Status', 'type' => 'text')
     );
     $this->sort_by = 'order';
     $this->list_field = array('OID', 'Article');

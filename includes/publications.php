@@ -72,6 +72,9 @@ function show_article_short($order_id) {
 }
 
 // render an article
+// Freedman SB, Adler M, Seshadri R, Powell EC. 
+// Oral ondansetron for gastroenteritis in a pediatric emergency department. 
+// N Engl J Med. 2006 Apr 20;354(16):1698-705. PubMed PMID: 16625009.
 function render_article($index, $article) {
   
   $article_id = "article-$index";
@@ -84,8 +87,17 @@ function render_article($index, $article) {
   
   $title = '<div class="title"><a href="' . $article['fulltext'] . '">' . $article['title'] . '</a></div>'."\n";
   
-  $journal_pages = (isset($article['pages']) && !empty($article['pages'])) ? ' pp. ' . $article['pages'] : '';
-  $journal = '<div class="journal">' . $article['journal'] . ' <strong>' . $article['volume'] . '</strong>' . $journal_pages . ' (' . $article['year'] . ')</div>'. "\n";
+  $journal_pages = (isset($article['pages']) && !empty($article['pages'])) ? $article['pages'] : '';
+  $journal_name = $article['journal'];
+  $journal_year = $article['year'];
+  $journal_volume = $article['volume'] + (!empty($article['issue'])) ? '(' . $article['issue'] . ')' : '';
+
+  $journal_comment = '';
+  if (!empty($article['status'])) {
+    $journal_comment = '<span class="status">' . $article['status'] . '</span>';
+  }
+
+  $journal = '<div class="journal">' . $journal_name . ' ' . $journal_year .';' . $journal_volume . ':' . $journal_pages . '. ' . $journal_comment .'</div>'. "\n";
   
   $bibtex_raw = array(
     '@article {', 
@@ -98,6 +110,7 @@ function render_article($index, $article) {
     '  pages = "' . $article['pages'] . '",',
     '  doi = "' . $article['doi'] . '"',
     "}\n");
+
   $bibtex_raw = implode("\n", $bibtex_raw);
   $bibtex = "<div class=\"bibtex\"><h4>BibTeX</h4><textarea class=\"bibtex\" readonly=\"readonly\">$bibtex_raw</textarea></div>\n";
   

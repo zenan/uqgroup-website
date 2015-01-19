@@ -4,6 +4,7 @@ $template->title = 'Journal Publications';
 $template->tab = 'Publications';
 ?>
 
+<!--
 <form id="publications-form">
   <table>
     <tr>
@@ -15,18 +16,33 @@ $template->tab = 'Publications';
     </tr>
   </table>
 </form>
+-->
 
-<div id="articles-wrapper" class="clearfix">  
-<div id="articles" class="articles">
 <?php 
+
+$categories = array(
+  'Synthetic Biology and Biological Systems Engineering',
+  'Cell-Based Immunotherapy Engineering'
+);
+
 $articles = json_decode(file_get_contents('json/articles.json'), true);
-foreach ($articles as $index => $article) {
-  echo render_article($index, $article);
+
+foreach ($categories as $category) {
+  echo '<h3>' . $category .'</h3>';
+  echo '<div id="articles-wrapper" class="clearfix">';
+  echo '<div id="articles" class="articles">';
+  foreach ($articles as $index => $article) {
+    if ($article['category'] == $category) {
+      echo render_article($index, $article);
+    }
+  }
+  echo '</div>';
+  echo '</div>';
 }
+
 ?>
 <p id="notfound" style="display:none"><strong>No articles found matching filter.</strong></p>
-</div>
-</div>
+
 
 
 <script type="text/javascript" src="/js/jquery.simplemodal.js"></script>

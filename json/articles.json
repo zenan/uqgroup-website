@@ -4,44 +4,46 @@
 		"title": "A yeast-based rapid prototype platform for gene-control elements in mammalian cells. ",
 		"keywords": "",
 		"authors": [
-			"Wei, K.Y., Chen, Y.Y., & Smolke, C.D."
+			"Wei, K.Y.",
+			"Chen, Y.Y.",
+			"Smolke, C.D."
 		],
 		"abstract": "Programming genetic circuits in mammalian cells requires flexible, tunable, and user-tailored gene-control systems. However, most existing control systems are either mechanistically specific for microbial organisms or must be laboriously re-engineered to function in mammalian cells. Here, we demonstrate a ribozyme-based device platform that can be directly transported from yeast to mammalian cells in a \"plug-and-play\" manner. Ribozyme switches previously prototyped in yeast are shown to regulate gene expression in a predictable, ligand-responsive manner in human HEK 293, HeLa, and U2OS cell lines without any change to device sequence nor further optimization. The ribozyme-based devices, which exhibit activation ratios comparable to the best RNA-based regulatory devices demonstrated in mammalian cells to-date, retain their prescribed functions (ON or OFF switch), tunability of regulatory stringency, and responsiveness to different small-molecule inputs in mammalian hosts. Furthermore, we observe strong correlations of device performance between yeast and all mammalian cell lines tested (R(2) \u2009= 0.63-0.97). Our unique device architecture can therefore act as a rapid prototyping platform (RPP) based on a yeast chassis, providing a well-developed and genetically tractable system that supports rapid and high-throughput screens for generating gene-controllers with a broad range of functions in mammalian cells. This platform will accelerate development of mammalian gene-controllers for diverse applications, including cell-based therapeutics and cell-fate reprogramming.",
 		"order": "6",
 		"fulltext": "http:\/\/onlinelibrary.wiley.com\/doi\/10.1002\/bit.24792\/full",
 		"journal": "Biotechnology and Bioengineering",
-		"doi": "10.1002\/bit.24792",
 		"year": "2013",
-		"arxiv": "",
 		"volume": "110",
 		"thumbnail": "biotechnology-and-bioengineering-110.png",
-		"number": "4",
+		"issue": "",
 		"month": "4",
 		"pages": "1201-10",
-		"comments": "",
-		"featured": "yes"
+		"category": "Synthetic Biology and Biological Systems Engineering",
+		"featured": "no",
+		"status": "Submitted"
 	},
 	{
 		"id": "5",
 		"title": "Synthetic biology: Advancing biological frontiers by building synthetic systems.",
 		"keywords": "",
 		"authors": [
-			"Chen, Y.Y.*, Galloway, K.E.*, & Smolke, C.D."
+			"Chen, Y.Y.*",
+			"Galloway, K.E.*",
+			"Smolke, C.D."
 		],
 		"abstract": "Advances in synthetic biology are contributing to diverse research areas, from basic biology to biomanufacturing and disease therapy. We discuss the theoretical foundation, applications, and potential of this emerging field.",
 		"order": "5",
 		"fulltext": "http:\/\/genomebiology.com\/content\/13\/2\/240",
 		"journal": "Genome Biology",
-		"doi": "10.1186\/gb-2012-13-2-240",
 		"year": "2012",
-		"arxiv": "",
 		"volume": "13",
 		"thumbnail": "genome-biology.png",
-		"number": "2",
+		"issue": "",
 		"month": "2",
 		"pages": "240",
-		"comments": "",
-		"featured": ""
+		"category": "Synthetic Biology and Biological Systems Engineering",
+		"featured": "",
+		"status": "*These authors contributed equally."
 	},
 	{
 		"id": "4",
@@ -54,16 +56,15 @@
 		"order": "4",
 		"fulltext": "http:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC3285276\/",
 		"journal": "Science Translational Medicine",
-		"doi": "10.1126\/scitranslmed.3002944",
 		"year": "2011",
-		"arxiv": "",
 		"volume": "3",
 		"thumbnail": "science-translational-medicine.png",
-		"number": "106",
+		"issue": "",
 		"month": "10",
 		"pages": "106ps42",
-		"comments": "",
-		"featured": ""
+		"category": "Synthetic Biology and Biological Systems Engineering",
+		"featured": "",
+		"status": ""
 	},
 	{
 		"id": "3",
@@ -76,16 +77,15 @@
 		"order": "3",
 		"fulltext": "http:\/\/nar.oxfordjournals.org\/content\/39\/7\/2981.long",
 		"journal": "Nucleic Acids Research",
-		"doi": "10.1093\/nar\/gkq954",
 		"year": "2011",
-		"arxiv": "",
 		"volume": "39",
 		"thumbnail": "nucleic-acids-research.png",
-		"number": "7",
+		"issue": "",
 		"month": "4",
 		"pages": "2981-94",
-		"comments": "",
-		"featured": ""
+		"category": "Synthetic Biology and Biological Systems Engineering",
+		"featured": "",
+		"status": ""
 	},
 	{
 		"id": "2",
@@ -98,16 +98,15 @@
 		"order": "2",
 		"fulltext": "http:\/\/www.pnas.org\/content\/107\/19\/8531.long",
 		"journal": "Proceedings of the National Academy of Sciences",
-		"doi": "10.1073\/pnas.1001721107",
 		"year": "2010",
-		"arxiv": "",
 		"volume": "107",
 		"thumbnail": "pnas.png",
-		"number": "19",
+		"issue": "",
 		"month": "5",
 		"pages": "8531-6",
-		"comments": "",
-		"featured": ""
+		"category": "Synthetic Biology and Biological Systems Engineering",
+		"featured": "",
+		"status": ""
 	},
 	{
 		"id": "1",
@@ -120,15 +119,14 @@
 		"order": "1",
 		"fulltext": "http:\/\/jb.asm.org\/content\/191\/3\/1083.long",
 		"journal": "Journal of Bacteriology",
-		"doi": "10.1128\/JB.00852-08",
 		"year": "2009",
-		"arxiv": "",
 		"volume": "191",
 		"thumbnail": "journal-of-bacteriology.png",
-		"number": "3",
+		"issue": "",
 		"month": "2",
 		"pages": "1083-91",
-		"comments": "",
-		"featured": ""
+		"category": "Cell-Based Immunotherapy Engineering",
+		"featured": "",
+		"status": ""
 	}
 ]

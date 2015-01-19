@@ -183,7 +183,7 @@ div.archive p { font-size: 95%; }
 div.archive p .icon-external-link { display: block; float: right; }
 div.archive p .icon-calendar { display: block; float: right; }
 
-#articles-wrapper, #conferences-wrapper, #books-wrapper { width: 46.9em;  }
+#articles-wrapper, #conferences-wrapper, #books-wrapper { width: 46.9em; margin-bottom: 1em; }
 #articles-wrapper { left:0; }
 #conferences-wrapper { left: 50em;}
 #books-wrapper  { left:100em; }
@@ -215,6 +215,7 @@ div.archive p .icon-calendar { display: block; float: right; }
 .article .author { }
 .article .journal { font-size: 90%; }
 .article .journal strong { font-weight: bold; }
+.article .journal .status { font-style: italic; }
 .article .title { font-weight: bold; font-style: italic; margin-bottom: 0.3em; padding-right: 6em; line-height: 1; }
 .article .title a { font-size: 95%; font-weight: bold; }
 .article div.bibtex { display: none; }
