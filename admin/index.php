@@ -180,7 +180,7 @@ function dashboard() {
     $readable = (is_readable($file)) ? '<td class="green"><i class="icon-ok"></i></td>' : '<td class="red"><i class="icon-remove"></i></td>';
     $writable = (is_writable($file)) ? '<td class="green"><i class="icon-ok"></i></td>' : '<td class="red"><i class="icon-remove"></i></td>';
     $perms = substr(sprintf('%o', fileperms($file)), -4);
-    if ($perms != '0777') {
+    if ($perms != '0777' && !chmod($file, 0777)) {
       $perms = '<td class="red"><i class="icon-warning-sign"></i> '.$perms.'</td>';
     } else {
       $perms = '<td class="green">'.$perms.'</td>';
