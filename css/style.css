@@ -50,7 +50,7 @@ body { }
 #nav          { }
 #header       { height: 10em; }
 #footer-wrap  { overflow: hidden; }
-#vertical-container         { padding-bottom: 16.5em; }
+#vertical-container         { padding-bottom: 3em; }
 #footer-wrap  { height: 2.5em; position: absolute; bottom: 0; width: 100%;}
 #footer-bottom {height: 2.5em; line-height: 2.5em; }
 
