@@ -163,10 +163,10 @@ a.btn:hover{background:#369;color:#eafaff;box-shadow:0 1px 0 rgba(255,255,255,0.
 .people-browser ul {padding: 0; margin: 0; }
 .people-browser li { display: block; margin-bottom: 0.5em; }
 li.person { display:block; clear: both; }
-li.person img { display: block; float:left; width: 12em; height: 17.5em; margin: 0.3em 1em 0.5em 0em; padding:2px; box-shadow: 0 0.2em 0.6em -0.1em rgba(0,0,0,0.4);}
+li.person img { display: block; float:left; width: 11em; height: 15.5em; margin: 0.3em 1em 0.5em 0em; padding:2px; box-shadow: 0 0.2em 0.6em -0.1em rgba(0,0,0,0.4);}
 li.person { color :#222; font-size: 95%; }
 li.person .name { display:inline-block; margin-top: 0.5em; margin-bottom: 0.3em; font-size:115%; font-weight: bold;}
-li.person-pi .name { clear: both; font-size: 115%;}
+li.person-pi .bio { line-height: 1.25;}
 #content li.person .affiliations ul li { margin: 0; font-size: 85%;}
 #content li.person .affiliations ul {margin-bottom: 0.1em; }
 li.person .info { display: block; font-size: 85%;}
