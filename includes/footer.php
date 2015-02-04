@@ -13,7 +13,7 @@
         }
       }
       ?>
-      <p><a href="/announcements">More announcements</a></p>
+      <p><a href="/?p=announcements">More announcements</a></p>
       </div>
     </div>
     <div class="sidebar-box">
@@ -70,7 +70,7 @@
       Yvonne Chen Lab. Copyright &copy;<?php echo date('Y'); ?> All Rights Reserved.
     </div>
     <div class="copyright">
-    <i class="icon-map-marker"></i> &nbsp; 5532-H Boelter Hall <i>&nbsp;</i>Los Angeles, CA 90095
+    <i class="icon-map-marker"></i> &nbsp; 5531 Boelter Hall <i>&nbsp;</i>Los Angeles, CA 90095
     </div>
     </div>
   </div>

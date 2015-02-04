@@ -88,9 +88,9 @@ function render_article($index, $article) {
   $title = '<div class="title"><a href="' . $article['fulltext'] . '">' . $article['title'] . '</a></div>'."\n";
   
   $journal_pages = (isset($article['pages']) && !empty($article['pages'])) ? $article['pages'] : '';
-  $journal_name = (isset($article['journal']) && !empty($article['journal'])) ? $article['journal'] : '';
+  $journal_name = (isset($article['journal']) && !empty($article['journal'])) ? $article['journal'] . '.': '';
   $journal_year = (isset($article['year']) && !empty($article['year'])) ? $article['year'] : '';
-  $journal_volume = $article['volume'] + (!empty($article['issue'])) ? '(' . $article['issue'] . ')' : '';
+  $journal_volume = (!empty($article['issue'])) ? $article['volume'] . '(' . $article['issue'] . ')' : '';
 
   if (empty($article['volume'])) {
     $journal_volume = '';

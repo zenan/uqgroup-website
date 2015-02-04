@@ -18,7 +18,7 @@ code,pre{font-family:"Inconsolata","Consolas","Monaco",monospace;}
 a, #content .article a.button:hover, #content .article a.button:hover span { color: #262; }
 a:hover { color: #393; }
 #header { background-color: #063106; } /* overriden by background image */
-#nav ul li a.active {background:#282;} /* selected tab */
+#nav ul li a.active {background:#393;} /* selected tab */
 #nav ul li a.active {border:1px solid #030;} /* selected tab border */
 #nav ul li a.active:hover{background:#2a8a2a;} /* selected tab hover */
 /* end non-grayscale colors */
